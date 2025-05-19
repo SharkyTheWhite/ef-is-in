@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMG!</title>
+    <style>
+      body {
+          background-color: #121212;
+          color: #005953;
+          font-family: Arial, sans-serif;
+          text-align: center;
+          padding: 10rem;
+      }
+    .center {
+      margin: auto;
+      border: 3px solid #cccccc;
+      padding: 5rem;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+    <p class="center">OMG <span>christmas</span>EF is in <span id="aaah"></span> weeks!</p>
+  <script>
+    let el = document.querySelector("#aaah");
+    let when =  new Date("2025-09-03");
+    setInterval(200, () => {
+      el.textContent = (new Date(date) - when) / (1000 * 60 * 60 * 24 * 7);
+    });
+  </script>
+</body>
+</html>
