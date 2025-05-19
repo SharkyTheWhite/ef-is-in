@@ -21,13 +21,13 @@
   </style>
 </head>
 <body>
-    <p class="center">OMG <span>christmas</span>EF is in <span id="aaah"></span> weeks!</p>
+    <p class="center">OMG <s>christmas</s>EF is in <span id="aaah"></span> weeks!</p>
   <script>
     let el = document.querySelector("#aaah");
     let when =  new Date("2025-09-03");
-    setInterval(200, () => {
+    setInterval(() => {
       el.textContent = (new Date(date) - when) / (1000 * 60 * 60 * 24 * 7);
-    });
+    }, 200);
   </script>
 </body>
 </html>
