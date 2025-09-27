@@ -18,13 +18,21 @@
       padding: 5rem;
       font-size: 2rem;
     }
+    @media only screen and (max-width: 600px) {
+        body {
+            padding: 1rem;
+        }
+        .center {
+            padding: 2rem;
+        }
+    }
   </style>
 </head>
 <body>
     <p class="center">OMG <s>christmas</s>EF is in <span id="aaah"></span> weeks!</p>
   <script>
     let el = document.querySelector("#aaah");
-    let when =  new Date("2025-09-03");
+    let when =  new Date("2026-08-19");
     setInterval(() => {
       el.textContent = ((when - new Date()) / (1000 * 60 * 60 * 24 * 7)).toFixed(6);
     }, 1000);
